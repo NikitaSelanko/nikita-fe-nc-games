@@ -11,7 +11,6 @@ export default function AllReviews() {
         .then((res)=>{
             return res.json()
         }).then ((response)=>{
-            console.log(response)
             setReviews(response.reviews)
         })
     },[])
