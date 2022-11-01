@@ -1,0 +1,119 @@
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: orange;
+}
+
+.Header{
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 12vh;
+    background-color:#5c5e5f;
+}
+
+.H1Header{
+    left: -100px;
+    top: -12px;
+    font-size: 6vh;
+    position: absolute;
+    text-align: center;
+    width: 40vw;
+    height: 70vh;
+    color: orange;
+    text-shadow: 4px 3px #000000;
+}
+
+
+/* main{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+    background-color: orange;
+    #8E6222
+} */
+.AllReviews {
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(4,130px);
+    grid-template-columns: repeat(5,220px);
+    background-color: rgb(255, 255, 255);
+    top: 12.1%;
+    left:22%;
+    height: 100vh;
+    width: 72.5vw;
+    border: 1px solid black;
+}
+.grid-item {
+    background-color: rgba(154, 9, 9, 0.8);
+    margin: 3px;
+    padding: 3px;
+    font-size: 30px;
+}
+.ReviewBox {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 15px;
+    text-align: center;
+    background-color:rgb(244, 199, 143);
+    font-size: small;
+    margin: 10px;
+    padding: 3px;
+    /* height: 13vh;
+    width: 12.2vw; */
+
+}
+.ReviewBox:hover {
+    background-color:#5c5e5f;
+    color:orange;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.ReviewBoxDetails{
+    display: flex;
+}
+.ReviewOwner {
+    font-size: 2.5vh;
+    display:inline;
+    position:relative;
+    /* right: 30px;
+    top: 75px; */
+    padding: 0;
+    margin: 0;
+
+}
+.ReviewVotes{
+    border: 1px solid red;
+    border-radius: 100px;
+    font-size: 2vh;
+    font-weight: bold;
+    display: inline;
+    position: relative;
+    width: 2vw;
+    height: 3vh;
+    /* top: 20%;
+    left: 30%; */
+    padding: 5px;
+    margin: 0px;
+
+}
+.ReviewTitle {
+    font-size: 2.2vh;
+    text-align: center;
+    display:inline;
+    position:relative;
+    /* bottom: 0px;
+    right: 0px; */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
