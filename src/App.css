@@ -12,7 +12,7 @@ body{
 
 .HomeButton{
     display: flex;
-    width: 50px;
+    width: 40px;
     color:white;
 }
 
@@ -25,17 +25,6 @@ body{
     -2px 1px 30px #000000;
 }
 
-
-/* main{
-    position: absolute;
-    top: 20%;
-    text-align: center;
-    padding: 1px;
-    margin: 1px;
-    width: 100%;
-    background-color: orange;
-    #8E6222
-} */
 .AllReviews {
     text-align: center;
     position: absolute;
@@ -58,16 +47,23 @@ body{
     flex-direction: row-reverse;
     justify-content: flex-end;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     background-color:rgba(143, 242, 244, 0.578);
     font-size: small;
     margin: 10px;
     padding: 3px;
-    /* height: 13vh;
-    width: 12.2vw; */
+    width: 200px;
+    height: 100px;
+
 
 }
+
+.ReviewLink {
+    text-decoration: none;
+    color:inherit;
+}
+
 .ReviewBox:hover {
     background-color:#3C4048;
     color:#00ABB3;
@@ -118,6 +114,13 @@ body{
     top: 400px;
     left: 400px;
     color:black
+    /* #00ABB3 */
 }
 
-/* #00ABB3 */
+.SingleReviewCard{
+    display: flex;
+
+}
+.SingleRevieImg {
+    width: 250px;
+}
