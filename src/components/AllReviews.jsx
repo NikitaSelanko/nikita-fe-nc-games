@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import ReviewCard from "./ReviewCard"
+import {Link} from "react-router-dom"
 
 export default function AllReviews() {
     const[reviews, setReviews] = useState([]);
@@ -24,12 +25,14 @@ export default function AllReviews() {
         <section className="AllReviews">
             {reviews.map(({title, owner, votes, review_id})=>{
                 return(
+                    <Link to={`/reviews/${review_id}`} key={review_id} className="ReviewLink">
                     <ReviewCard 
                     key={review_id}                   
                     owner={owner}
                     title={title}
                     votes={votes}
                     />
+                    </Link>
                 )
             })}
         </section>
